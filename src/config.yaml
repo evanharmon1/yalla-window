@@ -1,5 +1,5 @@
 site:
-  name: AstroWind
+  name: Yalla Window Cleaning
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
+    default: Yalla Window Cleaning
     template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "\U0001F680 Premium, reliable window cleaning at a great price"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Yalla Window Cleaning
     images:
       - url: '~/assets/images/default.png'
         width: 1200
