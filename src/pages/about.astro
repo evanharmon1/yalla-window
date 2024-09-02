@@ -1,7 +1,9 @@
 ---
 import Hero from '~/components/widgets/Hero.astro';
 import Layout from '~/layouts/PageLayout.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+import CallToActionComponent from '~/components/widgets/CallToAction.astro';
+import { headerData } from '~/navigation';
+import type { CallToAction } from '~/types';
 
 const metadata = {
   title: 'About us',
@@ -9,7 +11,6 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-
   <Hero
     image={{
       src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
@@ -21,31 +22,16 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      Daniel is a born and raised Kansan who moved to the Missouri side after 8 years of world travel and living in different states around the country. Hospitality and customer service have been at the core of who he is and what he has done his entire life. He would love the chance to serve you and get your home or business sparkling and looking fresh! 
+      Daniel is a born and raised Kansan who moved to the Missouri side after 8 years of world travel and living in
+      different states around the country. Hospitality and customer service have been at the core of who he is and what
+      he has done his entire life. He would love the chance to serve you and get your home or business sparkling and
+      looking fresh!
     </Fragment>
   </Hero>
 
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: '913-662-1495',
-        href: 'tel:913-662-1495',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-      {
-        variant: 'secondary',
-        text: 'Email',
-        href: 'mailto:daniel@yallawindowcleaning.com',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-    ]}
-  >
+  <CallToActionComponent actions={headerData?.actions as CallToAction[]}>
     <Fragment slot="title">
-      Contact us <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">today!</span>
+      Contact us <br class="block sm:hidden" /><span class="sm:whitespace-nowrap"> today!</span>
     </Fragment>
-  </CallToAction>
-
+  </CallToActionComponent>
 </Layout>

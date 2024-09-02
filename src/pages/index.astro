@@ -3,7 +3,9 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+import CallToActionComponent from '~/components/widgets/CallToAction.astro';
+import { headerData } from '~/navigation';
+import type { CallToAction } from '~/types';
 
 const metadata = {
   title: 'Yalla Window Cleaning',
@@ -12,7 +14,7 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <Hero image={{ src: '~/assets/images/hero.png', alt: 'Yalla Window Hero Image' }}>
+  <Hero image={{ src: '~/assets/images/image3.jpg', alt: 'Yalla Window Hero Image' }}>
     <Fragment slot="title"> Yalla Window Cleaning </Fragment>
 
     <Fragment slot="subtitle">
@@ -117,26 +119,9 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: '913-662-1495',
-        href: 'tel:913-662-1495',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-      {
-        variant: 'secondary',
-        text: 'Email',
-        href: 'mailto:daniel@yallawindowcleaning.com',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-    ]}
-  >
+  <CallToActionComponent actions={headerData?.actions as CallToAction[]}>
     <Fragment slot="title">
       Contact us <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">today!</span>
     </Fragment>
-  </CallToAction>
+  </CallToActionComponent>
 </Layout>
