@@ -12,13 +12,8 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-
-  <Hero
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
-  >
-    <Fragment slot="title">
-      Yalla Window Cleaning
-    </Fragment>
+  <Hero image={{ src: '~/assets/images/hero.png', alt: 'Yalla Window Hero Image' }}>
+    <Fragment slot="title"> Yalla Window Cleaning </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
@@ -27,17 +22,18 @@ const metadata = {
     </Fragment>
   </Hero>
 
-
   <Content
     isReversed
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/image5.jpg',
       alt: 'Colorful Image',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Exterior Window Cleaning</h3>
-      From hot and sunny summers to cold and snowy winters, the elements definitely can and will take their toll on your home and its windows. Here at Yalla, we are versed with professional tools and a keen expertise to remove dirt, grime, and any other pesky residue that’s hindering that crystal clear view that you’re looking for!
+      From hot and sunny summers to cold and snowy winters, the elements definitely can and will take their toll on your
+      home and its windows. Here at Yalla, we are versed with professional tools and a keen expertise to remove dirt, grime,
+      and any other pesky residue that’s hindering that crystal clear view that you’re looking for!
     </Fragment>
 
     <Fragment slot="bg">
@@ -47,13 +43,15 @@ const metadata = {
 
   <Content
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/image4.jpg',
       alt: 'Colorful Image',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Interior Window Cleaning</h3>
-      Got kids? Pets? Let us illuminate your home and get rid of all those fingerprints, dust, and unwanted adherents from the interior of your home. Don’t want to get on a ladder inside your house? We’ll extend our reach to those ceiling fans, skylights, and chandeliers that are just out of reach!
+      Got kids? Pets? Let us illuminate your home and get rid of all those fingerprints, dust, and unwanted adherents from
+      the interior of your home. Don’t want to get on a ladder inside your house? We’ll extend our reach to those ceiling
+      fans, skylights, and chandeliers that are just out of reach!
     </Fragment>
 
     <Fragment slot="bg">
@@ -64,13 +62,14 @@ const metadata = {
   <Content
     isReversed
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/image3.jpg',
       alt: 'Colorful Image',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Screen Cleaning</h3>
-      Even after a fresh window cleaning, a dirty screen can significantly hinder your view if not cleaned properly and wiped down. We’ll handle the process of removing, cleaning, and re-inserting your screens for you!
+      Even after a fresh window cleaning, a dirty screen can significantly hinder your view if not cleaned properly and wiped
+      down. We’ll handle the process of removing, cleaning, and re-inserting your screens for you!
     </Fragment>
 
     <Fragment slot="bg">
@@ -80,13 +79,16 @@ const metadata = {
 
   <Content
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/image2.jpg',
       alt: 'Colorful Image',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Haze Buildup</h3>
-      A significant amount of time between cleaning paired with the added heat of one or a number of midwest summer’s will often leave a layer of ‘haze buildup’ on your windows. Without the proper tools, this layer of accumulation is nearly impossible to get off. We’ll carefully and safely take care of that extra haze to ensure your windows are as see through as the day they were installed.
+      A significant amount of time between cleaning paired with the added heat of one or a number of midwest summer’s will
+      often leave a layer of ‘haze buildup’ on your windows. Without the proper tools, this layer of accumulation is nearly
+      impossible to get off. We’ll carefully and safely take care of that extra haze to ensure your windows are as see through
+      as the day they were installed.
     </Fragment>
 
     <Fragment slot="bg">
@@ -97,13 +99,17 @@ const metadata = {
   <Content
     isReversed
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/image1.jpg',
       alt: 'Colorful Image',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">New Construction</h3>
-      Throughout the process of building a new home, many different materials often find their way to the surface of your brand new windows. From paint chippings, to hardened mud or clay, to caulking that has dripped onto your windows, all of these get in the way and without the proper experience and tools can be quite difficult to get off. We’ll put that final touch on your home, removing all of these substances, and leaving you with a perfectly clean window and that oh so coveted curb appeal that you’re after!
+      Throughout the process of building a new home, many different materials often find their way to the surface of your
+      brand new windows. From paint chippings, to hardened mud or clay, to caulking that has dripped onto your windows, all
+      of these get in the way and without the proper experience and tools can be quite difficult to get off. We’ll put that
+      final touch on your home, removing all of these substances, and leaving you with a perfectly clean window and that
+      oh so coveted curb appeal that you’re after!
     </Fragment>
 
     <Fragment slot="bg">
