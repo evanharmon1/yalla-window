@@ -58,3 +58,6 @@ Temporary Items
 
 # Ignore content collection generated files
 .astro
+
+# Local Netlify folder
+.netlify
