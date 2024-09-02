@@ -14,7 +14,7 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <Hero image={{ src: '~/assets/images/image3.jpg', alt: 'Yalla Window Hero Image' }}>
+  <Hero>
     <Fragment slot="title"> Yalla Window Cleaning </Fragment>
 
     <Fragment slot="subtitle">
@@ -120,8 +120,6 @@ const metadata = {
   </Content>
 
   <CallToActionComponent actions={headerData?.actions as CallToAction[]}>
-    <Fragment slot="title">
-      Contact us <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">today!</span>
-    </Fragment>
+    <Fragment slot="title"> Contact us today! </Fragment>
   </CallToActionComponent>
 </Layout>
