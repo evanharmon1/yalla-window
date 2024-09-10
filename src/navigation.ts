@@ -5,7 +5,7 @@ export const headerData = {
       href: 'about',
     },
   ],
-  actions: [{ variant: 'primary', text: 'Call Us', href: 'tel:913-662-1495', target: '_blank', icon: 'tabler:phone', }, { variant: 'secondary', text: 'Email', href: 'mailto:daniel@yallawindowcleaning.com', target: '_blank', icon: 'tabler:mail', }],
+  actions: [{ variant: 'primary', text: 'Get Your Free Estimate', href: 'tel:913-662-1495', target: '_blank', icon: 'tabler:phone', }, { variant: 'secondary', text: 'Email', href: 'mailto:daniel@yallawindowcleaning.com', target: '_blank', icon: 'tabler:mail', }],
 };
 
 export const footerData = {

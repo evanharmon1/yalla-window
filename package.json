@@ -9,9 +9,13 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "dev:ntl": "netlify dev",
     "start": "astro dev",
     "build": "astro build",
+    "build:ntl": "netlify build",
+    "deploy:prod": "netlify deploy --prod",
     "preview": "astro preview",
+    "preview:ntl": "netlify deploy --build --context deploy-preview",
     "astro": "astro",
     "check": "npm run check:astro && npm run check:eslint && npm run check:prettier",
     "check:astro": "astro check",
