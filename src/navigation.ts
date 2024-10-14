@@ -10,9 +10,7 @@ export const headerData = {
 
 export const footerData = {
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
+    { ariaLabel: 'Google', icon: 'tabler:brand-google', href: '#' },
   ],
   footNote: ``,
 };
