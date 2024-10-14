@@ -7,6 +7,7 @@ import CallToActionComponent from '~/components/widgets/CallToAction.astro';
 import { headerData } from '~/navigation';
 import type { CallToAction } from '~/types';
 import Reviews from '~/components/widgets/Reviews.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
 
 const metadata = {
   title: 'Yalla Window Cleaning',
@@ -150,6 +151,51 @@ const metadata = {
       },
     ]}
   />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Proudly serving Kansas City"
+    columns={3}
+    items={[
+      {
+        title: 'Kansas City, MO',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Kansas City, KS',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Overland Park, KS',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: "Lee's Summit, MO",
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Olathe, KS',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Parkville, MO',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Liberty, MO',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Independence, MO',
+        icon: 'tabler:chevrons-right',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
 
   <CallToActionComponent actions={headerData?.actions as CallToAction[]}>
     <Fragment slot="title"> Contact us today! </Fragment>
